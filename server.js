@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-var list = ['Manju Shaw', 'Yogesh Tayal', 'John Doe', 'Jane Doe', 'Amitabh Bachchan', 'Abhishek Bachchan'];
+var list = ['Yogesh Tayal', 'John Doe', 'Jane Doe', 'Amitabh Bachchan', 'Abhishek Bachchan'];
 app.get('/data', function (req, res) {
 	var data = list.filter(function(obj){
 		return obj.toLowerCase().match(req.query.str.toLowerCase());
